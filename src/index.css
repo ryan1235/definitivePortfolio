@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    @apply bg-[#0A0119];
+    @apply text-[#FAFBFF];
+}
+
+.blog img{
+    @apply max-w-[500px] rounded-2xl py-6;
+}
+.blog h2{
+   @apply text-2xl underline;
+}
+.blog h3{
+   @apply text-lg underline;
+}
+.blog a{
+  @apply underline hover:underline hover:text-blue-300 transition-colors
+}
+.blog p{
+    @apply text-center
+}
