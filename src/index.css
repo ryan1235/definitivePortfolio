@@ -26,3 +26,6 @@ body{
 .blog p{
     @apply text-center
 }
+.blog strong{
+    @apply border border-slate-200 p-2;
+}

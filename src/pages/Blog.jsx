@@ -60,7 +60,7 @@ export default function Blog() {
               }
             </div>
             <section className="flex-1 flex flex-col items-center justify-center p-5">
-              <div className="flex flex-col items-center gap-6 blog" dangerouslySetInnerHTML={{ __html: data?.card.blog.blog }}></div>
+              <div data-aos="zoom-in-down" data-aos-duration="1000" className="flex flex-col items-center gap-6 blog" dangerouslySetInnerHTML={{ __html: data?.card.blog.blog }}></div>
             </section>
             <div className="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="500" data-numposts="5" ></div>
           </main>

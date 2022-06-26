@@ -1,4 +1,3 @@
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Header() {

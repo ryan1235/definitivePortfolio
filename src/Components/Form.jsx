@@ -25,7 +25,7 @@ export default function Form() {
             />
             <input
                 required
-                placeholder="nome"
+                placeholder="Nome"
                 id="nome"
                 type="text"
                 name="nome"
