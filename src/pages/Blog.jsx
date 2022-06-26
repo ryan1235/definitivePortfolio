@@ -2,6 +2,7 @@ import { gql, useQuery } from "@apollo/client"
 import { useParams } from "react-router-dom"
 
 import Header from "../Components/Header"
+import gifloader from "../img/833.gif"
 
 import { GithubLogo, Browsers } from "phosphor-react";
 import Footer from "../Components/Footer";
@@ -44,7 +45,7 @@ export default function Blog() {
         {loading ?
           <main className="w-full flex items-center justify-center">
             <div className="h-[50vh] flex flex-col items-center justify-center">
-              <img src="/src/img/833.gif" alt="carregamento" />
+              <img src={gifloader} alt="carregamento" />
               <span>Carregando...</span>
             </div>
           </main> :

@@ -7,8 +7,9 @@ import CardsProjects from "../Components/CardsProjects";
 import Form from "../Components/Form";
 import Header from "../Components/Header";
 import Marque from "../Components/Marque";
-import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
+import gifloader from "../img/833.gif"
+import banner from "../img/BannerInicial.png"
 
 const CARD_QUERY = gql`
 query cardinskills {
@@ -38,7 +39,7 @@ export default function Home() {
             {loading ?
                 <main className="w-full flex items-center justify-center">
                     <div className="h-[50vh] flex flex-col items-center justify-center">
-                        <img src="/src/img/833.gif" alt="carregamento" />
+                        <img src={gifloader} alt="carregamento" />
                         <span>Carregando...</span>
                     </div>
                 </main> :
@@ -50,7 +51,7 @@ export default function Home() {
                             <AnchorLink className="mt-8 w-48 bg-[#F9F5FF] text-[#0A0119] px-1 py-1 rounded-lg flex items-center gap-2 hover:opacity-40 transition-opacity" href="#contato"><AddressBook size={32} />Entre em Contato</AnchorLink >
                         </div>
                         <div>
-                            <img className="w-[480px]" src="/src/img/BannerInicial.png" alt="Banner inicial" />
+                            <img className="w-[480px]" src={banner} alt="Banner inicial" />
                         </div>
                     </section>
                     <section className="w-full flex items-center flex-col gap-3">
