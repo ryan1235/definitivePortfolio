@@ -15,7 +15,7 @@ export default function Form() {
                 id="email"
                 type="email"
                 name="email"
-                className='w-1/2 md:w-auto bg-transparent border border-slate-200 text-center rounded-lg py-1'
+                    className='w-1/2 md:w-auto bg-transparent border border-slate-900 font-bold dark:border-slate-200 text-center rounded-lg py-1'
             />
             <ValidationError
                 requere
@@ -29,7 +29,7 @@ export default function Form() {
                 id="nome"
                 type="text"
                 name="nome"
-                    className='w-1/2 md:w-auto bg-transparent border border-slate-200 text-center rounded-lg'
+                    className='w-1/2 md:w-auto bg-transparent border border-slate-900 font-bold dark:border-slate-200 text-center rounded-lg'
             />
             <ValidationError
                 prefix="Email"
@@ -41,14 +41,14 @@ export default function Form() {
                 placeholder="Mais Informações..."
                 id="message"
                 name="message"
-                className='w-full bg-transparent border border-slate-200 text-center p-2 rounded-lg'
+                className='w-full bg-transparent border border-slate-900 font-bold dark:border-slate-200 text-center p-2 rounded-lg'
             />
             <ValidationError
                 prefix="Message"
                 field="message"
                 errors={state.errors}
             />
-            <button type="submit" className='border border-slate-200 px-1 py-1 rounded-lg ' disabled={state.submitting}>
+            <button type="submit" className='border border-slate-900 font-bold dark:border-slate-200 px-1 py-1 rounded-lg ' disabled={state.submitting}>
                 Enviar
             </button>
         </form>

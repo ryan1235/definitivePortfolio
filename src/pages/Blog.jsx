@@ -52,10 +52,10 @@ export default function Blog() {
           <main className="flex flex-col items-center">
             <h1 className="text-3xl mt-16 underline">{data?.card.nomeDoProjeto}</h1>
             <div className="flex gap-4 md:gap-6 mt-4">
-              {data?.card.blog.github ? <a className="bg-[#F9F5FF] text-[#0A0119] w-[145px] py-1 rounded-lg flex items-center justify-center text-2xl" href={data?.card.blog.githubLink}><GithubLogo size={32} /> Git Hub</a> : null
+              {data?.card.blog.github ? <a className="bg-[#F9F5FF] text-[#0A0119] w-[145px] border border-black py-1 rounded-lg flex items-center justify-center text-2xl" href={data?.card.blog.githubLink}><GithubLogo size={32} /> Git Hub</a> : null
 
               }
-              {data?.card.blog.demo ? <a className=" bg-[#F9F5FF] text-[#0A0119] w-[145px] py-1 rounded-lg flex items-center justify-center text-1xl" href={data?.card.blog.demoLink}><Browsers size={32} /> Site do Projeto</a> : null
+              {data?.card.blog.demo ? <a className=" bg-[#F9F5FF] text-[#0A0119] w-[145px] border border-black py-1 rounded-lg flex items-center justify-center text-1xl" href={data?.card.blog.demoLink}><Browsers size={32} /> Site do Projeto</a> : null
 
               }
             </div>

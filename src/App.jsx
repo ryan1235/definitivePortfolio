@@ -1,15 +1,17 @@
 import { ApolloProvider } from "@apollo/client"
-import Home from "./pages/Home"
 import { client } from './lib/apollo'
 import Router from "./Router"
 import { BrowserRouter } from "react-router-dom"
+import ThemeContextProvider from "./hooks/useTheme"
 function App() {
 
   return (
     <ApolloProvider client={client}>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
+      <ThemeContextProvider>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+      </ThemeContextProvider>
     </ApolloProvider>
   )
 

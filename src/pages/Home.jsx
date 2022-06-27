@@ -52,7 +52,7 @@ export default function Home() {
                             <p className="text-sm md:text-base" data-aos="fade-right" data-aos-duration="2000">
                                 Olá! Meu nome é Ryan Luca, sou desenvolvedor e estudante de front-end. Você está prestes a ver um pouco do meu trabalho!
                             </p>
-                            <AnchorLink data-aos="fade-right" data-aos-duration="2000" className="mt-8 w-48 bg-[#F9F5FF] text-[#0A0119] px-1 py-1 rounded-lg flex items-center gap-2 hover:opacity-40 transition-opacity" href="#contato"><AddressBook size={32} />
+                            <AnchorLink data-aos="fade-right" data-aos-duration="2000" className="mt-8 w-48 bg-[#f5eaea] border-[#0A0119] text-[#0A0119] border px-1 py-1 rounded-lg flex items-center gap-2 hover:opacity-40 transition-opacity" href="#contato"><AddressBook size={32} />
                                 Entre em Contato
                             </AnchorLink >
                         </div>
@@ -62,7 +62,7 @@ export default function Home() {
                     </section>
                     <section className="w-full flex items-center flex-col gap-3">
                         <h2 className="text-1xl text-center md:text-2xl">Algumas Tecnologias que utilizo</h2>
-                        <Marquee className="w-full md:w-5/6 p-6 " gradient={false} pauseOnHover={true}>
+                        <Marquee className="w-full md:w-5/6 p-6 bg-black/10 rounded-lg " gradient={false} pauseOnHover={true}>
                             {data?.allSkills.map(skill => {
                                 return (
                                     <Marque
@@ -80,7 +80,7 @@ export default function Home() {
                             <div data-aos="zoom-in" data-aos-duration="1000" className="flex w-full md:w-auto md:flex-1 flex-col items-center ">
                                 <h2 className="text-2xl w-full text-center mb-4">Um pouco Sobre Min</h2>
                                 <p className="text-center">Sou apaixonado por tecnologia desde pequeno, ganhei meu primeiro computador com 8 anos, dai em diante não parei mais, sempre me interessei pela área de tecnológica, principalmente programação. Minha jornada como desenvolvedor fornt end começou no início do ano de 2022 com aquela famosa promessa de ano novo, acabou que me apaixonei, de aí em diante não parei mais de estudar e de me aperfeiçoar nessa área que amo tanto!</p>
-                                <AnchorLink className="mt-8 hidden md:flex gap-2 items-center bg-[#F9F5FF] text-[#0A0119] w-[220px] px-1 py-2 rounded-lg hover:opacity-50 transition-opacity" href="#redes">
+                                <AnchorLink className="mt-8 w-56 bg-[#f5eaea] border-[#0A0119] text-[#0A0119] border px-1 py-1 rounded-lg flex items-center gap-2" href="#redes">
                                     <UsersThree size={32} />Minhas Redes Sociais
                                 </AnchorLink>
                             </div>

@@ -7,8 +7,8 @@
 }
 
 body{
-    @apply bg-[#0A0119];
-    @apply text-[#FAFBFF];
+    @apply bg-[#FAFBFF] dark:bg-[#0A0119] ;
+    @apply text-[#0A0119] dark:text-[#FAFBFF];
 }
 
 .blog img{
