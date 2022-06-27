@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header className="flex items-center justify-between mt-12">
             <span className="block ml-2 text-2xl font-semibold">RyanLuca</span>
-            <nav className="flex gap-9 mr-10">
+            <nav className="hidden md:flex gap-9 mr-10">
                 <Link to="/">Inicio</Link>
                 <Link to="#Sobre">Sobre</Link >
                 <Link to="/#Projetos">Projetos</Link >

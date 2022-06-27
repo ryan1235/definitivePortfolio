@@ -44,12 +44,12 @@ export default function Home() {
                     </div>
                 </main> :
                 <main className="flex items-center justify-center flex-col">
-                    <section className="w-[80%] h-[85vh] mt-8 flex items-center justify-center">
+                    <section className="md:w-[80%] w-full md:h-[85vh] h-[30vh] mb-20 md:mb-0 mt-8 flex items-center justify-center">
                         <div className="flex flex-col gap-3 flex-1">
-                            <strong data-aos="fade-down" data-aos-duration="1000" className="block text-2xl md:text-3xl">
+                            <strong data-aos="fade-down" data-aos-duration="1000" className="block text-1xl md:text-3xl">
                                 FRONTEND DEVELOPER
                             </strong>
-                            <p data-aos="fade-right" data-aos-duration="2000">
+                            <p className="text-sm md:text-base" data-aos="fade-right" data-aos-duration="2000">
                                 Olá! Meu nome é Ryan Luca, sou desenvolvedor e estudante de front-end. Você está prestes a ver um pouco do meu trabalho!
                             </p>
                             <AnchorLink data-aos="fade-right" data-aos-duration="2000" className="mt-8 w-48 bg-[#F9F5FF] text-[#0A0119] px-1 py-1 rounded-lg flex items-center gap-2 hover:opacity-40 transition-opacity" href="#contato"><AddressBook size={32} />
@@ -61,7 +61,7 @@ export default function Home() {
                         </div>
                     </section>
                     <section className="w-full flex items-center flex-col gap-3">
-                        <h2 className="text-2xl">Algumas Tecnologias que utilizo</h2>
+                        <h2 className="text-1xl md:text-2xl">Algumas Tecnologias que utilizo</h2>
                         <Marquee className="w-full md:w-5/6 p-6 " gradient={false} pauseOnHover={true}>
                             {data?.allSkills.map(skill => {
                                 return (
@@ -75,9 +75,9 @@ export default function Home() {
                         </Marquee>
                     </section>
                     <section id="Sobre" className="flex flex-col items-center gap-3 mt-10">
-                        <div className="flex items-center gap-4 flex-wrap">
-                            <img src="https://github.com/ryan1235.png" alt="Esse sou eu RyanLuca" />
-                            <div data-aos="zoom-in" data-aos-duration="1000" className="flex flex-1 flex-col items-center ">
+                        <div className="flex items-center gap-4 justify-center flex-wrap">
+                            <img className="w-[250px] md:w-[400px]" src="https://github.com/ryan1235.png" alt="Esse sou eu RyanLuca" />
+                            <div data-aos="zoom-in" data-aos-duration="1000" className="flex w-full md:w-auto md:flex-1 flex-col items-center ">
                                 <h2 className="text-2xl w-full text-center mb-4">Um pouco Sobre Min</h2>
                                 <p className="text-center">Sou apaixonado por tecnologia desde pequeno, ganhei meu primeiro computador com 8 anos, dai em diante não parei mais, sempre me interessei pela área de tecnológica, principalmente programação. Minha jornada como desenvolvedor fornt end começou no início do ano de 2022 com aquela famosa promessa de ano novo, acabou que me apaixonei, de aí em diante não parei mais de estudar e de me aperfeiçoar nessa área que amo tanto!</p>
                                 <AnchorLink className="mt-8 hidden md:flex gap-2 items-center bg-[#F9F5FF] text-[#0A0119] w-[220px] px-1 py-2 rounded-lg hover:opacity-50 transition-opacity" href="#redes">

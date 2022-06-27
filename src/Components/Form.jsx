@@ -8,7 +8,7 @@ export default function Form() {
         }
     return (
         <form className='flex flex-col items-center gap-4' onSubmit={handleSubmit}>
-            <div className='flex gap-8'>
+            <div className='flex md:gap-8'>
             <input
                 required
                 placeholder="Endereço de Email"
