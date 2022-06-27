@@ -61,7 +61,7 @@ export default function Home() {
                         </div>
                     </section>
                     <section className="w-full flex items-center flex-col gap-3">
-                        <h2 className="text-1xl md:text-2xl">Algumas Tecnologias que utilizo</h2>
+                        <h2 className="text-1xl text-center md:text-2xl">Algumas Tecnologias que utilizo</h2>
                         <Marquee className="w-full md:w-5/6 p-6 " gradient={false} pauseOnHover={true}>
                             {data?.allSkills.map(skill => {
                                 return (

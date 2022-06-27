@@ -15,7 +15,7 @@ export default function Form() {
                 id="email"
                 type="email"
                 name="email"
-                className='bg-transparent border border-slate-200 text-center rounded-lg py-1'
+                className='w-1/2 md:w-auto bg-transparent border border-slate-200 text-center rounded-lg py-1'
             />
             <ValidationError
                 requere
@@ -29,7 +29,7 @@ export default function Form() {
                 id="nome"
                 type="text"
                 name="nome"
-                    className='bg-transparent border border-slate-200 text-center rounded-lg'
+                    className='w-1/2 md:w-auto bg-transparent border border-slate-200 text-center rounded-lg'
             />
             <ValidationError
                 prefix="Email"

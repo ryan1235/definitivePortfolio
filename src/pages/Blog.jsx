@@ -44,14 +44,14 @@ export default function Blog() {
         <Header />
         {loading ?
           <main className="w-full flex items-center justify-center">
-            <div className="h-[50vh] flex flex-col items-center justify-center">
+            <div className="h-[80vh] flex flex-col items-center justify-center">
               <img src={gifloader} alt="carregamento" />
               <span>Carregando...</span>
             </div>
           </main> :
           <main className="flex flex-col items-center">
             <h1 className="text-3xl mt-16 underline">{data?.card.nomeDoProjeto}</h1>
-            <div className="flex gap-6 mt-4">
+            <div className="flex gap-4 md:gap-6 mt-4">
               {data?.card.blog.github ? <a className="bg-[#F9F5FF] text-[#0A0119] w-[145px] py-1 rounded-lg flex items-center justify-center text-2xl" href={data?.card.blog.githubLink}><GithubLogo size={32} /> Git Hub</a> : null
 
               }
