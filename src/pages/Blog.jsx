@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 
 import Header from "../Components/Header"
 import gifloader from "../img/833.gif"
+import gifloaderdark from "../img/833dark.gif"
 
 import { GithubLogo, Browsers } from "phosphor-react";
 import Footer from "../Components/Footer";
@@ -45,7 +46,8 @@ export default function Blog() {
         {loading ?
           <main className="w-full flex items-center justify-center">
             <div className="h-[80vh] flex flex-col items-center justify-center">
-              <img src={gifloader} alt="carregamento" />
+              <img className="hidden dark:block" src={gifloader} alt="carregamento" />
+              <img className="block dark:hidden" src={gifloaderdark} alt="carregamento" />
               <span>Carregando...</span>
             </div>
           </main> :

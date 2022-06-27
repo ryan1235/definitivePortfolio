@@ -9,6 +9,7 @@ import Header from "../Components/Header";
 import Marque from "../Components/Marque";
 import Footer from "../Components/Footer";
 import gifloader from "../img/833.gif"
+import gifloaderdark from "../img/833dark.gif"
 import banner from "../img/BannerInicial.png"
 
 const CARD_QUERY = gql`
@@ -39,7 +40,8 @@ export default function Home() {
             {loading ?
                 <main className="w-full flex items-center justify-center">
                     <div className="h-[50vh] flex flex-col items-center justify-center">
-                        <img src={gifloader} alt="carregamento" />
+                        <img className="hidden dark:block" src={gifloader} alt="carregamento" />
+                        <img className="block dark:hidden" src={gifloaderdark} alt="carregamento" />
                         <span>Carregando...</span>
                     </div>
                 </main> :
